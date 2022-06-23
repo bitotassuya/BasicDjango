@@ -5,4 +5,5 @@ from django.shortcuts import render
 
 
 def hello(request):
-    return render(request, 'index.html')
+    return render(request, 'index.html', {'name': 'บทความท่องเที่ยวภาคเหนือ',
+                                          'Author': 'จิรพงษ์'})
