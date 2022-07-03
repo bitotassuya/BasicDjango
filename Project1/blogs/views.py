@@ -5,5 +5,8 @@ from django.shortcuts import render
 
 
 def hello(request):
-    return render(request, 'index.html', {'name': 'บทความท่องเที่ยวภาคเหนือ',
-                                          'Author': 'จิรพงษ์'})
+    tags = ["น้ำตกทรายขวว", "น้ำตกลำพะยา", "พุปาโกย", "สนามช้าง"]
+
+    return render(request, 'index.html',
+                  {'name': 'บทความท่องเที่ยวภาคเหนือ',
+                   'Author': 'จิรพงษ์', 'tags': tags})

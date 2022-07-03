@@ -13,6 +13,17 @@
     <p>Jirapong</p>
     <h3>{{name}}</h3>
     <p>{{Author}}</p>
+    <h2>
+        ป้ายกำกับ
+    </h2>
+    <ul>
+        {%for tag in tags%}
+        <li>{{tag}}</li>
+        {%endfor%}
+
+    </ul>
+
+
 </body>
 
 </html>
