@@ -6,7 +6,10 @@ from django.shortcuts import render
 
 def hello(request):
     tags = ["น้ำตกทรายขวว", "น้ำตกลำพะยา", "พุปาโกย", "สนามช้าง"]
-
+    rating = 4
     return render(request, 'index.html',
                   {'name': 'บทความท่องเที่ยวภาคเหนือ',
-                   'Author': 'จิรพงษ์', 'tags': tags})
+                   'Author': 'จิรพงษ์', 'tags': tags,
+
+                   'rating': rating
+                   })
