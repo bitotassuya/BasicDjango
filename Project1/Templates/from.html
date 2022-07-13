@@ -1,0 +1,28 @@
+<!-- extends layoutfile-->
+{% extends 'layout.html'%}
+{% block FirstContent %}
+
+
+
+<h2 align="center">เขียนบทความ</h2>
+<from action="" method="get">
+    <!--input for name-->
+    <div class="form-group">
+        <label for="">ชื่อบทความ</label>
+        <input type="text" class="form-control" name="name">
+
+    </div>
+    <!--input for description-->
+    <div class="form-group">
+        <label for="">รายละเอียดบทความ</label>
+        <input type="text" class="form-control" name="description">
+    </div>
+
+
+</from>
+<div class="container mt-3" align="center">
+    <!-- Button for save-->
+    <button type="submit" value="บันทึกบทความ" class="btn btn-outline-primary">บันทึกบทความ</button>
+</div>
+
+{% endblock %}

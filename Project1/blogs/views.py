@@ -17,3 +17,7 @@ def hello(request):
 
 def page1(request):
     return render(request, 'page1.html')
+
+
+def createFrom(request):
+    return render(request, 'from.html')
