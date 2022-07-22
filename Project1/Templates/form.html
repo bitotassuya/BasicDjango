@@ -5,24 +5,27 @@
 
 
 <h2 align="center">เขียนบทความ</h2>
-<from action="" method="get">
-    <!--input for name-->
+<form action="addform" method="POST">
+    {% csrf_token %}
+
+    <!--input for name -->
     <div class="form-group">
         <label for="">ชื่อบทความ</label>
         <input type="text" class="form-control" name="name">
 
     </div>
-    <!--input for description-->
+    <!-- input for description -->
     <div class="form-group">
         <label for="">รายละเอียดบทความ</label>
         <input type="text" class="form-control" name="description">
     </div>
 
+    <div class="container mt-3" align="center">
+        <!-- Button for save-->
+        <input type="submit" value="บันทึกบทความ" class="btn btn-outline-primary">
+    </div>
 
-</from>
-<div class="container mt-3" align="center">
-    <!-- Button for save-->
-    <button type="submit" value="บันทึกบทความ" class="btn btn-outline-primary">บันทึกบทความ</button>
-</div>
+    </from>
 
-{% endblock %}
+
+    {% endblock %}

@@ -22,6 +22,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.hello),
     path('page1', views.page1),
-    path('createfrom', views.createFrom)
+    path('createfrom', views.createFrom),
+    path('addform', views.addForm),
+
+    path('addtest', views.addtest),
+    path('add', views.add, name='add')
+
 
 ]
